@@ -30,11 +30,11 @@ const displayPhones = (phones, isShowAll) => {
         const phoneCard = document.createElement('div');
         phoneCard.classList = `card bg-base-100 shadow-xl border-2 border-gray-400`;
         phoneCard.innerHTML = `
-        <figure class="px-10 pt-10"><img src="${phone.image}" alt="Shoes" /></figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">${phone.phone_name}</h2>
-          <p>There are many variations of passages of available, but the majority have suffered</p>
-          <div class="text-center text-neutral-700 text-[25px] font-bold font-['Poppins']">$999</div>
+        <figure class="px-6 pt-6 lg:px-10 lg:pt-10"><img src="${phone.image}" alt="Shoes" /></figure>
+        <div class="card-body items-center text-center p-2 lg:p-8">
+          <h2 class="card-title lg:text-xl text-base font-bold">${phone.phone_name}</h2>
+          <p class="text-sm lg:text-base p-0">There are many variations of passages of available</p>
+          <div class="text-center text-neutral-700 text-xl lg:text-2xl font-bold font-['Poppins']">$999</div>
           <div class="card-actions justify-end">
             <button onclick="handleShowDetails('${phone.slug}')" class="btn btn-primary">Show Details</button>
           </div>
